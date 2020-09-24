@@ -1,0 +1,55 @@
+body{
+            font-family:sans-serif;
+            padding:0;
+            margin:0;
+        }
+        #header{
+            background-color: #EEEEEE; 
+            padding:5px;
+            height: 30px;
+            width:100%;
+        }
+        #logo{
+            float: left;
+            font-weight: bold;
+            font-size: 120%;
+            padding: 3px 5px;
+        }
+        #container{
+            width:300px;
+            height: 30px;
+            margin: 0 auto;
+        //    border: 5px solid red;
+        }
+        .toggleButton{
+            position:center;
+            float:left;
+            border: 1px solid grey;
+            padding: 6px;
+            font-size: 90%;
+            border-radius:10%;
+
+        }
+        .active{
+            background-color: #E8F2FF;
+        }
+
+        .highlightedButton {
+            background-color:grey;
+        }
+        textarea{
+            width:50%;
+            resize:none;
+            border-top:none;
+            border-color:grey;
+        }
+        .panel{
+            float:left;
+            border-left:none;
+        }
+        iframe{
+            border:none;
+        }
+        .hidden{
+            display:none;
+        }

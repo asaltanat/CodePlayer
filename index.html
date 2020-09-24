@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <script src="jquery.min.js"></script>
+    <style type="text/css">
+        #circle{
+            background-color:green;
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            margin:10px;
+            float:left;
+        }
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }
+        #Two{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    Hi
+    <div id="circle">
+    </div>
+
+    <div class="box">
+    </div>
+
+    <div class="box">
+    </div>
+    <p id ="one">This is some text</p>
+    <button id="but">Text</button>
+    <script type="text/javascript">
+
+     $("#but").click(function () {
+        if ($("#one").css("display")!="none") {
+                $("#one").fadeOut("slow");
+        }
+        else {
+                $("#one").fadeIn("slow");
+           
+        }
+        });
+        $("#circle").click(function () {
+            $(this).animate({
+                width: "400px",
+                height: "400px",
+                borderRadius: "0%"
+            }, 2000, function () {
+
+                $(this).css("background-color","red")
+            })
+        });
+    </script>
+</body>
+</html>

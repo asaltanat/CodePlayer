@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CodePlayer</title>
+    <script src="jquery.min.js"></script>
+    <link href="jqueryui/jquery-ui.css" rel="stylesheet">
+    <script src="jqueryui/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="CodePlayer.css">
+
+</head>
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            CodePlayer
+        </div>
+
+        <div id="container">
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            <div class="toggleButton active" id="output">Output</div>
+
+        </div>
+    </div>
+    <div id="bodycontainer">
+        <textarea id="htmlpanel" class="panel"><p id="par">Hello Html</p></textarea>
+
+        <textarea id="csspanel" class="panel hidden">p{color:red;}</textarea>
+
+        <textarea id="javascriptpanel" class="panel hidden">alert("Hiiii");</textarea>
+        <iframe id="outputpanel" class="panel">Output</iframe>
+    </div>
+    <script type ="text/javascript" src="cp.js"></script>
+</body >
+</html >
